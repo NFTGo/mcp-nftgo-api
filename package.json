@@ -1,0 +1,30 @@
+{
+  "name": "@everimbaq/mcp-nftgo-api",
+  "version": "0.1.0",
+  "description": "NFTGo API MCP Server",
+  "license": "MIT",
+  "author": "NFTGo",
+  "homepage": "https://nftgo.io",
+  "type": "module",
+  "bin": {
+    "nftgo-api": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc && shx chmod +x dist/*.js",
+    "prepare": "npm run build",
+    "watch": "tsc --watch",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.1"
+  },
+  "devDependencies": {
+    "shx": "^0.3.4",
+    "typescript": "^5.6.2",
+    "prettier": "^3.2.5"
+  }
+}
