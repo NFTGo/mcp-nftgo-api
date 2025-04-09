@@ -1,0 +1,23 @@
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    properties:
+      apiKey:
+        type: string
+        description: "NFTGo API Key"
+    required: ["apiKey"]
+  commandFunction: |
+    function getCommand(config) {
+      return {
+        command: "node",
+        args: ["dist/index.js", config.apiKey],
+        env: {
+          NFTGO_API_KEY: config.apiKey
+        }
+      }
+    }
+
+build:
+  dockerfile: Dockerfile
+  dockerBuildPath: . 

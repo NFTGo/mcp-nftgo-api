@@ -8,8 +8,8 @@ const host = 'https://data-api.nftgo.io';
 const RequestSchema = z.object({
   type: z.enum(['POST', 'GET', 'PUT', 'DELETE']),
   url: z.string(),
-  headers: z.record(z.string(), z.string()),
-  body: z.any(),
+  headers: z.record(z.string(), z.string()).optional(),
+  body: z.any().optional(),
 });
 
 const openapiSpec = openapiSpecJson as ApiSpec;
@@ -184,7 +184,7 @@ export function listTools() {
               description: 'Body to include in the request',
             },
           },
-          required: ['type', 'url', 'headers', 'body'],
+          required: ['type', 'url'],
         },
       },
       {
@@ -221,7 +221,7 @@ export async function callTool(request: CallToolRequest) {
   try {
     if (name === 'request') {
       const { type, url, headers, body } = RequestSchema.parse(args);
-      const response = await makeRequest(url, type, headers, body);
+      const response = await makeRequest(url, type, headers || {}, body || {});
       return {
         content: [
           {
