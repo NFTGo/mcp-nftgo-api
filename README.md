@@ -1,6 +1,6 @@
 # NFTGoAPI
 
-A Model Context Protocol server that provides HTTP request to NFTGo Developer API based on NFTGo API documentation. 
+A Model Context Protocol server that provides HTTP request to NFTGo Developer API based on NFTGo API documentation.
 
 ## Components
 
@@ -15,7 +15,7 @@ To use this server with the Claude Desktop app, add the following configuration 
   "mcpServers": {
     "nftgoapi": {
       "command": "npx",
-      "args": ["-y", "@everimbaq/mcp-nftgo-api", "NFTGO-API-KEY"]
+      "args": ["-y", "@nftgo/mcp-nftgo-api", "NFTGO-API-KEY"]
     }
   }
 }

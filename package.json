@@ -1,5 +1,5 @@
 {
-  "name": "@everimbaq/mcp-nftgo-api",
+  "name": "@nftgo/mcp-nftgo-api",
   "version": "0.1.2",
   "description": "NFTGo API MCP Server",
   "license": "MIT",
@@ -20,12 +20,13 @@
     "format:check": "prettier --check ."
   },
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.9.0"
+    "@modelcontextprotocol/sdk": "^1.9.0",
+    "zod": "^3.24.3"
   },
   "devDependencies": {
     "@types/node": "^20.0.0",
+    "prettier": "^3.2.5",
     "shx": "^0.3.4",
-    "typescript": "^5.6.2",
-    "prettier": "^3.2.5"
+    "typescript": "^5.6.2"
   }
 }

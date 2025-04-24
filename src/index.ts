@@ -20,7 +20,7 @@ import {
 const server = new Server(
   {
     name: 'nftgo-api',
-    description: 'This is a simple API for NFT data in ethereum',
+    description: 'This is an assistant for NFT data in ethereum build with NFTGo API V1.1',
     version: '0.1.0',
   },
   {
@@ -54,4 +54,5 @@ async function main() {
   const transport = new StdioServerTransport();
   await server.connect(transport);
 }
+
 main();

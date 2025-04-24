@@ -163,7 +163,7 @@ export function listTools() {
     tools: [
       {
         name: 'request',
-        description: `Make an HTTP to NFTGo API(${host}) request with curl`,
+        description: `Make an HTTP request to NFTGo API(${host}) based on the OpenAPI specifications returned by the api-path-schema tool.`,
         inputSchema: {
           type: 'object',
           properties: {
@@ -189,7 +189,7 @@ export function listTools() {
       },
       {
         name: 'api-path-schema',
-        description: `Get detail description and parameters of a NFT API path`,
+        description: `Get detail description and parameters of a NFT API path based on OpenAPI specifications.`,
         inputSchema: {
           type: 'object',
           properties: {
@@ -204,7 +204,7 @@ export function listTools() {
       },
       {
         name: 'api-documentation',
-        description: `Get all NFT API documentation and endpoints`,
+        description: `Retrieve a comprehensive list of all NFT API endpoints with documentation based on OpenAPI specifications.`,
         inputSchema: {
           type: 'object',
           properties: {},

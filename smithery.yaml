@@ -5,8 +5,8 @@ startCommand:
     properties:
       apiKey:
         type: string
-        description: "NFTGo API Key"
-    required: ["apiKey"]
+        description: 'NFTGo API Key'
+    required: ['apiKey']
   commandFunction: |
     function getCommand(config) {
       return {
@@ -20,4 +20,4 @@ startCommand:
 
 build:
   dockerfile: Dockerfile
-  dockerBuildPath: . 
+  dockerBuildPath: .
