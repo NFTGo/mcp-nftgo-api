@@ -1,6 +1,8 @@
 # NFTGo MCP
 
-A Model Context Protocol server that provides HTTP request to NFTGo Developer API based on NFTGo API documentation.
+A Model Context Protocol server that provides HTTP request to NFTGo Developer API based on NFTGo [API documentation](https://docs.nftgo.io/reference/introduction).
+
+Currently only support Ethereum.
 
 ## Key Features
 **1. NFT Collection**
