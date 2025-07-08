@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/nftgo-mcp-nftgo-api-badge.png)](https://mseep.ai/app/nftgo-mcp-nftgo-api)
+
 # NFTGo MCP
 
 A Model Context Protocol server that provides HTTP request to NFTGo Developer API based on NFTGo [API documentation](https://docs.nftgo.io/reference/introduction).
